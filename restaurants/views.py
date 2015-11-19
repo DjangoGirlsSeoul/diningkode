@@ -31,9 +31,11 @@ restaurants = [{
 # helper functions
 def find_restaurant_by_name(restaurants, name):
     # code here!
+    # ex. find_restaurant_by_name(restaurants, "mcdonalds") returns the dict of mcdonalds
 
 def filter_restaurants_by_rating(restaurants, rating):
     # code here!
+    # ex. filter_restaurants_by_rating(restaurants, 4) returns a list of dictionaries that include burger_king and KFC
 
 def list(request):
     return render(request, 'restaurants/list.html', {"restaurants": restaurants})
