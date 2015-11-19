@@ -42,7 +42,7 @@ def list(request):
 
 def detail(request, name):
     # code here!
+    return render(request, 'restaurants/detail.html', {"restaurants": restaurants})
 
 def rating(request, value):
     # code here!
-    return render(request, 'restaurants/rating.html', {"restaurants": rated_restaurants, 'rating': value})
