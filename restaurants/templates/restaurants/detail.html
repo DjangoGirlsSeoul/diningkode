@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>DiningKode</title>
+    <meta name="description" content="DiningKode">
+    <meta name="author" content="You!">
+
+    <style>
+        html, body, div, form, fieldset, legend, label {
+         margin: 0;
+         padding: 0; 
+        }
+        header {
+            height: 50px;
+            background-color: red;
+        }
+        header div {
+            text-align: center;
+            padding-top: 15px;
+        }
+        header div a {
+            color: white;
+        }
+        main {
+            width: 800px;
+            margin: auto;
+            text-align: center
+        }
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <div>
+        <a href="/">Home</a>
+
+    </div>
+    </header>
+    <main>
+        <img src="{{ restaurant.image }}" alt="" width="500px">
+        <ul>
+            <li><h3>{{ restaurant.name }}</h3></li>
+            <li>Address: {{ restaurant.address }}</li>
+            <li>Phone: {{ restaurant.phone }}</li>
+            <li>Price: {{ restaurant.price }}</li>
+            <li>Rating: {{ restaurant.rating }}</li>
+            <li>Review: {{ restaurant.review }}</li>
+        </ul>
+    </main>
+</body>
+</html>
