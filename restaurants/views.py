@@ -30,27 +30,17 @@ restaurants = [{
                }]
 # helper functions
 def find_restaurant_by_name(restaurants, name):
-    for restaurant in restaurants:
-        if restaurant["name"] == name:
-            return restaurant
-    return None
+    # code here!
 
 def filter_restaurants_by_rating(restaurants, rating):
-    filtered_restaurants = []
-    for restaurant in restaurants:
-        if restaurant["rating"] >= rating:
-            filtered_restaurants.append(restaurant)
-    return filtered_restaurants
+    # code here!
 
 def list(request):
     return render(request, 'restaurants/list.html', {"restaurants": restaurants})
 
 def detail(request, name):
-    restaurant = find_restaurant_by_name(restaurants, name)
-    if not restaurant:
-         raise Http404("Restaurant does not exist")
-    return render(request, 'restaurants/detail.html', {"restaurant": restaurant})
+    # code here!
 
 def rating(request, value):
-    rated_restaurants = filter_restaurants_by_rating(restaurants, int(value))
+    # code here!
     return render(request, 'restaurants/rating.html', {"restaurants": rated_restaurants, 'rating': value})

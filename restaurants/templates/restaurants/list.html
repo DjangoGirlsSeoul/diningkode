@@ -52,23 +52,7 @@
             <li><a href="/rating/3">Restaurants rated 3 or greater</a></li>
         </ul>
         <ul>
-            {% for resto in restaurants %}
-                <li>
-                    <section>
-                            <a href="/{{resto.name}}">
-                                <img src="{{ resto.image }}" alt="" width="300">
-                            </a>
-                            <ul>
-                                <li>
-                                    <a href="/{{resto.name}}">{{resto.name}}</a>
-                                </li>
-                                <li>rating: {{ resto.rating }}</li>
-                                <li>phone: {{ resto.phone }}</li>
-                                <li>address: {{ resto.address }}</li>
-                            </ul>
-                    </section>
-                </li>
-            {% endfor %}
+            {# code here #}
         </ul>
 
     </main>
