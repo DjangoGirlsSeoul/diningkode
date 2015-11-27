@@ -7,11 +7,12 @@ def list(request):
     return render(request, 'restaurants/list.html', {"restaurants": restaurants})
 
 def detail(request, name):
-    restaurant = Restaurant.objects.get(name=name)
-    reviews = Review.objects.filter(restaurant=restaurant)
-    return render(request, 'restaurants/detail.html', {"restaurant": restaurant, 'reviews': reviews})
+    # restaurant = ???
+    # https://docs.djangoproject.com/en/1.8/topics/db/queries/#retrieving-a-single-object-with-get
+    return render(request, 'restaurants/detail.html', {"restaurant": restaurant})
 
 def rating(request, value):
     rating_value = float(value)
-    restaurants = Restaurant.objects.filter(rating__gte=rating_value)
+    # code here
+    # https://docs.djangoproject.com/en/1.8/topics/db/queries/#retrieving-specific-objects-with-filters
     return render(request, 'restaurants/rating.html', {"restaurants": restaurants, "rating_value": rating_value})
