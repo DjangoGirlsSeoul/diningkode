@@ -43,7 +43,31 @@
     </div>
     </header>
     <main>
-        {# code here #}
+        <section>
+                <a href="/{{restaurant.name}}">
+                    <img src="{{ restaurant.image }}" alt="" width="300">
+                </a>
+                <ul>
+                    <li>
+                        <a href="/{{restaurant.name}}">{{restaurant.name}}</a>
+                    </li>
+                    <li>rating: {{ restaurant.rating }}</li>
+                    <li>phone: {{ restaurant.phone_number }}</li>
+                    <li>address: {{ restaurant.address }}</li>
+                </ul>
+        </section>
+        <section>
+            <h2>Reviews</h2>
+            <ul>
+            {% for review in reviews %}
+            <li>
+                {{ review.review_text }}     
+                by: {{ review.author.username }}
+            </li>
+
+            {% endfor %}
+            </ul>
+        </section>
     </main>
 </body>
 </html>

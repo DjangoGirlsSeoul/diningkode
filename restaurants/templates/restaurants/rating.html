@@ -43,9 +43,25 @@
     </div>
     </header>
     <main>
-        <h1>Restaurants that have ratings greater than {{ value }}</h1>
+        <h1>Restaurants that have ratings greater than {{ rating_value }}</h1>
         <ul>
-            {# code here #}
+            {% for resto in restaurants %}
+                <li>
+                    <section>
+                            <a href="/{{resto.name}}">
+                                <img src="{{ resto.image }}" alt="" width="300">
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="/{{resto.name}}">{{resto.name}}</a>
+                                </li>
+                                <li>rating: {{ resto.rating }}</li>
+                                <li>phone: {{ resto.phone }}</li>
+                                <li>address: {{ resto.address }}</li>
+                            </ul>
+                    </section>
+                </li>
+            {% endfor %}
         </ul>
 
     </main>
