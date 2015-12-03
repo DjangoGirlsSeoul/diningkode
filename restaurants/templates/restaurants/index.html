@@ -3,36 +3,37 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Restaurants</title>
+	<title>DiningKode</title>
 	<link rel="stylesheet" href="{% static 'restaurants/css/style.css' %}">
+
 </head>
 <body>
-
+ <header>
     <nav>
       <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Restaurants</a>
+        <li><a href="/" class="active" >Home</a></li>
+        <li><a href="/list/">Restaurants</a></li>
+       <li><a href="#" >Rating</a>
           <ul>
-            <li><a href="#">MCDonalds</a></li>
-            <li><a href="#">KFC</a></li>
-            <li><a href="#">BurgerKing</a></li>
-          </ul>
-        </li>
-        <li><a href="#" >Recipes</a>
-          <ul>
-            <li><a href="#">Appetizers</a></li>
-            <li><a href="#">Main</a></li>
-            <li><a href="#">Desserts</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">3</a></li>
           </ul>
         </li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+    </header>
   <section>
 		<img src="{% static 'restaurants/images/food_main.jpg' %}">
 		<h2>Choose your restaurant and enjoy Food!</h2>
 	</section>
 
+<footer>
+	<nav>
+		<a href="">About us</a>
+	</nav>
+</footer>
 
 </body>
 </html>

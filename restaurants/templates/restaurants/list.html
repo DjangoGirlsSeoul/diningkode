@@ -1,49 +1,38 @@
+{% load staticfiles %}
 <!doctype html>
-
 <html lang="en">
 <head>
     <meta charset="utf-8">
 
-    <title>DiningKode</title>
+    <title>DiningKode Restaurants</title>
     <meta name="description" content="DiningKode">
     <meta name="author" content="You!">
-
-    <style>
-        html, body, div, form, fieldset, legend, label {
-         margin: 0;
-         padding: 0; 
-        }
-        header {
-            height: 50px;
-            background-color: red;
-        }
-        header div {
-            text-align: center;
-            padding-top: 15px;
-        }
-        header div a {
-            color: white;
-        }
-        main {
-            width: 800px;
-            margin: auto;
-            text-align: center;
-        }
-        section {
-            border-bottom: 3px solid black;
-        }
-        li {
-            list-style: none;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'restaurants/css/style.css' %}">
+    <!-- For box model http://codepen.io/collection/DVYVpB/ --> 
 </head>
 
 <body>
-    <header>
-    <div>
-        <a href="/">Home</a>
-
-    </div>
+   
+     <nav>
+      <ul>
+        <li><a href="/" >Home</a></li>
+        <li><a href="/list/" class="active" >Restaurants</a>
+          <ul>
+            <li><a href="#">MCDonalds</a></li>
+            <li><a href="#">KFC</a></li>
+            <li><a href="#">BurgerKing</a></li>
+          </ul>
+        </li>
+        <li><a href="#" >Rating</a>
+          <ul>
+            <li><a href="#">5</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
     </header>
     <main>
         <ul>
