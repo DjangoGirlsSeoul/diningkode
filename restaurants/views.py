@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import Http404
 from .models import Restaurant, Review
 
+def index(request):
+    return render(request, 'restaurants/index.html', {})
+
 def list(request):
     restaurants = Restaurant.objects.all()
     return render(request, 'restaurants/list.html', {"restaurants": restaurants})

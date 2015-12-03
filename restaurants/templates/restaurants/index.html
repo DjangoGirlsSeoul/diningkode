@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Restaurants</title>
+	<link rel="stylesheet" href="{% static 'restaurants/css/style.css' %}">
+</head>
+<body>
+
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Restaurants</a>
+          <ul>
+            <li><a href="#">MCDonalds</a></li>
+            <li><a href="#">KFC</a></li>
+            <li><a href="#">BurgerKing</a></li>
+          </ul>
+        </li>
+        <li><a href="#" >Recipes</a>
+          <ul>
+            <li><a href="#">Appetizers</a></li>
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Desserts</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  <section>
+		<img src="{% static 'restaurants/images/food_main.jpg' %}">
+		<h2>Choose your restaurant and enjoy Food!</h2>
+	</section>
+
+
+</body>
+</html>
