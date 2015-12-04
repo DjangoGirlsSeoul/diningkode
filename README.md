@@ -16,6 +16,10 @@ DEMO:
 ---
 
 1. Nav Bar 
+2. Card View 
+3. Boostrap Nav Bar 
+4. Boostrap Custom
+5. BooStrap Grid View
 
 
 ---
@@ -23,10 +27,34 @@ DEMO:
 TODO:
 ---
 
-1. Add sub navigation menu
+1. Add css for `p` and `a` element in 'restaurants/static/restaurants/css/style.css'
 
+2. Design `restaurants/templates/restaurants/detail.html' in your own way! Be-Creative 
+	see an example here `http://www.diningcode.com/profile.php?rid=Pfrk1cG6PmDy&rank=3`
 
-2. Homework:
+3. Design `restaurants/templates/restaurants/rating.html' in your own way!
+
+4. Play-around with colors 
+
+5. See bootstrap templates `index_b.html` , `list.html` , `detail_b.html`  and `rating_b.html` 
+
+6- Design `restaurants/templates/restaurants/rating.html' and ``restaurants/templates/restaurants/detail.html'
+
+---
+
+References:
+---
+
+1. 생활코딩 CSS https://opentutorials.org/course/4
+
+2. 생활코딩 HTML https://opentutorials.org/course/3
+
+3. Flex Box https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes and
+	https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+
+3. Navigation Navbar  http://css-snippets.com/simple-horizontal-navigation/
+
+4. Boostrap : http://getbootstrap.com/getting-started/
 
 
 ---

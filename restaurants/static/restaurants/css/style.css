@@ -1,5 +1,6 @@
 /*http://css-snippets.com/drop-down-navigation */
 /* https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
 body {
   margin: 0;
@@ -93,7 +94,7 @@ margin: 10px;
 
 /* TODO: */
 
-img {
+.card a img {
 
   width: 300px;
   /*margin: ?px;*/
