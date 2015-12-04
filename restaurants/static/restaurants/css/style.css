@@ -1,4 +1,6 @@
 /*http://css-snippets.com/drop-down-navigation */
+/* https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes */
+
 body {
   margin: 0;
   padding: 0;
@@ -75,3 +77,68 @@ nav li:hover ul {
 nav li ul li {
    display: block;
  }
+
+/* Card View */
+
+
+.card{
+width: 340px;
+border: 1px solid gray;
+box-shadow: 1px 1px 3px #888;
+border-top: 10px solid red;
+min-height: 250px;
+padding-: 10px;
+margin: 10px;
+}
+
+/* TODO: */
+
+img {
+
+  width: 300px;
+  /*margin: ?px;*/
+}
+
+h1 {
+   text-align: left;
+   margin-left: 30px;
+
+}
+
+p {
+
+  margin-left: 30px;
+  /* make it more elegant */
+}
+
+.mainbox{
+  font-family: calibri;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+/* TODO */
+
+.card a {
+
+   /*text-decoration: ?;*/
+   /*color: ?;*/
+
+}
+
+.card a:hover {
+
+ /* color: ;*/
+}
+
+
+/* Single View */
+
+
+
+
+
+

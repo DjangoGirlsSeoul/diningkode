@@ -25,41 +25,26 @@
         </li>
         <li><a href="#" >Rating</a>
           <ul>
-            <li><a href="#">5</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">3</a></li>
+            <li><a href="/rating/5">5</a></li>
+            <li><a href="/rating/4">4</a></li>
+            <li><a href="/rating/3">3</a></li>
           </ul>
         </li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
     </header>
-    <main>
-        <ul>
-            <li><a href="/rating/5">Restaurants rated 5</a></li>
-            <li><a href="/rating/4">Restaurants rated 4 or greater</a></li>
-            <li><a href="/rating/3">Restaurants rated 3 or greater</a></li>
-        </ul>
-        <ul>
-            {% for resto in restaurants %}
-                <li>
-                    <section>
-                            <a href="/{{resto.name}}">
-                                <img src="{{ resto.image }}" alt="" width="300">
-                            </a>
-                            <ul>
-                                <li>
-                                    <a href="/{{resto.name}}">{{resto.name}}</a>
-                                </li>
-                                <li>rating: {{ resto.rating }}</li>
-                                <li>phone: {{ resto.phone }}</li>
-                                <li>address: {{ resto.address }}</li>
-                            </ul>
-                    </section>
-                </li>
-            {% endfor %}
-        </ul>
 
-    </main>
+       <div class="mainbox">
+           {% for resto in restaurants %}
+               <div class="card">
+              <a href="/{{resto.name}}"> <img src="{{ resto.image }}" width="300"> </a> 
+              <a href="/{{resto.name}}"><h1>{{resto.name}}</h1></a>
+              <p>rating: {{ resto.rating }}</p>
+               <p>phone: {{ resto.phone_number }}</p>
+                <p>address: {{ resto.address }}</p>
+                </div>
+            {% endfor %}
+       </div>
 </body>
 </html>
