@@ -2,13 +2,14 @@
 
 Requirements:
 
-- Get the dinkingkode-html
-- Make a virtual environment `python -m venv diningvenv 
-- Activate virtual environment
+- Get the [dinkingkode-html](https://github.com/djangogirlscodecamp/diningkode/archive/html-css.zip)
+- Make a virtual environment `python3 -m venv diningvenv`
+	 - For Windows follow [here](http://tutorial.djangogirls.org/ko/django_installation/index.html)
+- Activate virtual environment `source diningvenv/bin/activate` or `diningvenv\Scripts\activate`
 - Install requirements `pip install -r requirements.txt`
 -  First run migrations `python manage.py migrate` 
 - Create super user `python manage.py createsuperuser` 
-- Add some data from the admin interface 
+- Add some data from the admin interface [localhost](http://127.0.0.1:8000)
 
 ---
 
