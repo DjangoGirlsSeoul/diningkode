@@ -66,6 +66,8 @@ References:
 
 2. 생활코딩 HTML https://opentutorials.org/course/3
 
+3. Codecademy https://www.codecademy.com/en/tracks/korean-web 
+
 3. Flex Box https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes and
 	https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
 
@@ -78,5 +80,4 @@ References:
 
 Slack: https://djangogirlsseoul.slack.com/ 
 
-CodeCademy: http://codecademy.com/tracks/python and http://codecademy.com/tracks/python-ko
 
