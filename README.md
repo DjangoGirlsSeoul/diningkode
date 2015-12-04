@@ -28,19 +28,35 @@ DEMO:
 TODO:
 ---
 
-1. Add css for `p` and `a` element in 'restaurants/static/restaurants/css/style.css'
+1. Be-Creative 
 
-2. Design `restaurants/templates/restaurants/detail.html' in your own way! Be-Creative 
-	see an example here `http://www.diningcode.com/profile.php?rid=Pfrk1cG6PmDy&rank=3`
+2. Add css for `p` and `a` element style in 'restaurants/static/restaurants/css/style.css`
 
-3. Design `restaurants/templates/restaurants/rating.html' in your own way!
+3. Design `restaurants/templates/restaurants/detail.html` in your own way!
+	see an example here `http://www.diningcode.com/`
 
-4. Play-around with colors 
+4. Design `restaurants/templates/restaurants/rating.html` in your own way!
 
-5. See bootstrap templates `index_b.html` , `list.html` , `detail_b.html`  and `rating_b.html` 
+5. Play-around with colors and font-size - If you want add 한글 fonts refer [here](https://www.google.com/fonts/earlyaccess) 
 
-6- Design `restaurants/templates/restaurants/rating.html' and ``restaurants/templates/restaurants/detail.html'
+6. See bootstrap templates `index_b.html` , `list_b.html` , `detail_b.html`  and `rating_b.html` 
 
+7- Design `restaurants/templates/restaurants/rating_b.html` and `restaurants/templates/restaurants/detail_b.html` using bootstrap.
+
+---
+
+
+---
+
+Example Output:
+---
+
+1- Yogiyo Home Page
+
+![Home Page](https://www.dropbox.com/s/eyb61hx8ya4rmmf/screen_shot_1.png?dl=0 =450x)
+
+2- 배달의민족 
+![Home Page](https://www.dropbox.com/s/34op0x6whohnju3/%20screen_shot_2.png?dl=0 =450x)
 ---
 
 References:
