@@ -53,10 +53,10 @@ Example Output:
 
 1- Yogiyo Home Page
 
-![Home Page](https://www.dropbox.com/s/eyb61hx8ya4rmmf/screen_shot_1.png?dl=0 =450x)
+![Home Page](https://www.dropbox.com/s/eyb61hx8ya4rmmf/screen_shot_1.png = 650x400)
 
 2- 배달의민족 
-![Home Page](https://www.dropbox.com/s/34op0x6whohnju3/%20screen_shot_2.png?dl=0 =450x)
+![Home Page](https://www.dropbox.com/s/34op0x6whohnju3/%20screen_shot_2.png = 450x400)
 ---
 
 References:
