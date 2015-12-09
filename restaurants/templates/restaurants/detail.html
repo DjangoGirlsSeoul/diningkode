@@ -3,64 +3,46 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DiningKode</title>
     <meta name="description" content="DiningKode">
     <meta name="author" content="You!">
+<link rel="stylesheet" href="{% static 'restaurants/css/style.css' %}">
 
- <!-- TODO:  Move this code to CSS ? Add CSS link here --> 
-
-    <style>
-        html, body, div, form, fieldset, legend, label {
-         margin: 0;
-         padding: 0; 
-        }
-        header {
-            height: 50px;
-            background-color: red;
-        }
-        header div {
-            text-align: center;
-            padding-top: 15px;
-        }
-        header div a {
-            color: white;
-        }
-        main {
-            width: 800px;
-            margin: auto;
-            text-align: center
-        }
-        li {
-            list-style: none;
-        }
-    </style>
 </head>
 
 <body>
  <!-- TODO:  Change following to a good design! --> 
  <!-- Copy Navbar from index.html  --> 
-    <header>
-    <div>
-        <a href="/">Home</a>
-
-    </div>
+<header>
+    <nav>
+      <ul>
+        <li><a href="/" >Home</a></li>
+        <li><a href="/list/" class="active">Restaurants</a></li>
+       <li><a href="#" >Rating</a>
+          <ul>
+            <li><a href="/rating/5">5</a></li>
+            <li><a href="/rating/4">4</a></li>
+            <li><a href="/rating/3">3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
     </header>
-    <main>
-        <section>
-                <a href="/{{restaurant.name}}">
-                    <img src="{{ restaurant.image }}" alt="" width="300">
-                </a>
-                <ul>
-                    <li>
-                        <a href="/{{restaurant.name}}">{{restaurant.name}}</a>
-                    </li>
-                    <li>rating: {{ restaurant.rating }}</li>
-                    <li>phone: {{ restaurant.phone_number }}</li>
-                    <li>address: {{ restaurant.address }}</li>
-                </ul>
-        </section>
-        <section>
+
+    <div class="mainbox">
+               <div class="card_single">
+             <img src="{{ restaurant.image }}" width="500">
+              <a href="/{{restaurant.name}}"><h1>{{restaurant.name}}</h1></a>
+              <ul class="card_list">
+              <li><strong>Rating:</strong> {{ restaurant.rating }}</li>
+               <li><strong>Phone:</strong> {{ restaurant.phone_number }}</li>
+                <li><strong>Address:</strong> {{ restaurant.address }}</li>
+            </ul>
+                </div>
+
+<!--         <section>
             <h2>Reviews</h2>
             <ul>
             {% for review in reviews %}
@@ -71,7 +53,7 @@
 
             {% endfor %}
             </ul>
-        </section>
-    </main>
+        </section> -->
+         </div>
 </body>
 </html>

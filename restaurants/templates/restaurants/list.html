@@ -18,9 +18,9 @@
         <li><a href="/" >Home</a></li>
         <li><a href="/list/" class="active" >Restaurants</a>
           <ul>
-            <li><a href="#">MCDonalds</a></li>
-            <li><a href="#">KFC</a></li>
-            <li><a href="#">BurgerKing</a></li>
+          {% for resto in restaurants %}
+            <li><a href="/{{resto.name}}">{{resto.name}}</a></li>
+            {% endfor %}
           </ul>
         </li>
         <li><a href="#" >Rating</a>

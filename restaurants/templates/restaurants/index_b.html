@@ -9,13 +9,13 @@
 
 <!-- Latest compiled and minified CSS -->
 <!-- http://getbootstrap.com/getting-started/ -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
 
   <!-- Custom Style -->
 <link rel="stylesheet" href="{% static 'restaurants/css/style_b.css' %}">
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" >
 
 
 </head>
@@ -56,9 +56,10 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-  <section>
-		<img src="{% static 'restaurants/images/food_main.jpg' %}">
-	</section>
+  <div>
+     <h1 class="title" >Enjoy Delicious Food!</h1>
+		<img src="{% static 'restaurants/images/food_main.jpg' %}" class="img-responsive">
+	</div>
 </div>
 
     <footer class="footer">

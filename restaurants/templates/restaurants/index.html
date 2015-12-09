@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>DiningKode</title>
 	<link rel="stylesheet" href="{% static 'restaurants/css/style.css' %}">
 
@@ -15,9 +16,9 @@
         <li><a href="/list/">Restaurants</a></li>
        <li><a href="#" >Rating</a>
           <ul>
-            <li><a href="#">5</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">3</a></li>
+            <li><a href="/rating/5">5</a></li>
+            <li><a href="/rating/4">4</a></li>
+            <li><a href="/rating/3">3</a></li>
           </ul>
         </li>
         <li><a href="#">Contact</a></li>
@@ -25,7 +26,8 @@
     </nav>
     </header>
   <section>
-		<img  src="{% static 'restaurants/images/food_main.jpg' %}">
+  <h1 class="title" >Enjoy Delicious Food!</h1>
+		<img  src="{% static 'restaurants/images/red.jpg' %}" width="1280">
 	</section>
 
 <footer>

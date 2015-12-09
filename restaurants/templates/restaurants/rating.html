@@ -4,71 +4,49 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>DiningKode</title>
+    <title>DiningKode Rating</title>
     <meta name="description" content="DiningKode">
     <meta name="author" content="You!">
-   <!-- TODO:  Move this code to CSS ? Add CSS link here --> 
-    <!-- Copy Navbar from index.html  --> 
+    <link rel="stylesheet" href="{% static 'restaurants/css/style.css' %}">
 
-    <style>
-        html, body, div, form, fieldset, legend, label {
-         margin: 0;
-         padding: 0; 
-        }
-        header {
-            height: 50px;
-            background-color: red;
-        }
-        header div {
-            text-align: center;
-            padding-top: 15px;
-        }
-        header div a {
-            color: white;
-        }
-        main {
-            width: 800px;
-            margin: auto;
-            text-align: center;
-        }
-        li {
-            list-style: none;
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- TODO:  Change following to a good design!--> 
-    <header>
-    <div>
-        <a href="/">Home</a>
-
-    </div>
+     <nav>
+      <ul>
+        <li><a href="/" >Home</a></li>
+        <li><a href="/list/" class="active" >Restaurants</a>
+          <ul>
+            <li><a href="#">MCDonalds</a></li>
+            <li><a href="#">KFC</a></li>
+            <li><a href="#">BurgerKing</a></li>
+          </ul>
+        </li>
+        <li><a href="#" >Rating</a>
+          <ul>
+            <li><a href="{% url 'restaurants.views.rating' 5 %}">5</a></li>
+            <li><a href="{% url 'restaurants.views.rating' 4 %}">4</a></li>
+            <li><a href="{% url 'restaurants.views.rating' 3 %}">3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
     </header>
-    <main>
-        <h1>Restaurants that have ratings greater than {{ rating_value }}</h1>
-        <ul>
-            {% for resto in restaurants %}
-                <li>
-                    <section>
-                            <a href="/{{resto.name}}">
-                                <img src="{{ resto.image }}" alt="" width="300">
-                            </a>
-                            <ul>
-                                <li>
-                                    <a href="/{{resto.name}}">{{resto.name}}</a>
-                                </li>
-                                <li>rating: {{ resto.rating }}</li>
-                                <li>phone: {{ resto.phone }}</li>
-                                <li>address: {{ resto.address }}</li>
-                            </ul>
-                    </section>
-                </li>
-            {% endfor %}
-        </ul>
 
-    </main>
+       <div class="mainbox">
+           {% for resto in restaurants %}
+               <div class="card">
+              <a href="/{{resto.name}}"> <img src="{{ resto.image }}" width="300"> </a> 
+              <a href="/{{resto.name}}"><h1>{{resto.name}}</h1></a>
+              <p>rating: {{ resto.rating }}</p>
+               <p>phone: {{ resto.phone_number }}</p>
+                <p>address: {{ resto.address }}</p>
+                </div>
+            {% endfor %}
+       </div>
 </body>
 </html>

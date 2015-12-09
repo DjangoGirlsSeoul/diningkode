@@ -24,7 +24,7 @@
   <div class="container">
  <!-- http://getbootstrap.com/components/#navbar -->
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-custom">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -41,7 +41,14 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li ><a href="/bootstrap/">Home </a></li>
-        <li class="active"><a href="/bootstrap/list/">Restaurants <span class="sr-only">(current)</span></a></li>
+        <li class="active dropdown"><a lass="dropdown-toggle"  href="/bootstrap/list/" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Restaurants <span class="sr-only">(current)</span><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+        {% for resto in restaurants %}
+            <li><a href="/bootstrap/{{resto.name}}">{{resto.name}}</a></li>
+            {% endfor %}
+
+          </ul>
+        </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ratings <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -57,11 +64,9 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-</div>
-
   <div class="row">
   {% for resto in restaurants %}
-              <div class="col-xs-12 col-md-2 col-md-offset-1">
+              <div class="col-xs-12 col-md-4">
               <a href="/bootstrap/{{resto.name}}"> <img src="{{ resto.image }}" width="300"> </a> 
               <a href="/bootstrap/{{resto.name}}"><h2>{{resto.name}}</h2></a>
               <p>rating: {{ resto.rating }}</p>
@@ -71,6 +76,7 @@
             {% endfor %}
 
   </div>
+</div>
 
     <footer class="footer">
       <div class="container">

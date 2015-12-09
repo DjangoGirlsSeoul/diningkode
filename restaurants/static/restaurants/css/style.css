@@ -10,7 +10,7 @@ body {
 
 nav ul {
   list-style: none;
-  background-color: #ff0000;
+  background-color: #0000ff;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -83,7 +83,7 @@ nav li ul li {
 
 
 .card{
-width: 340px;
+width: 300px;
 border: 1px solid gray;
 box-shadow: 1px 1px 3px #888;
 border-top: 10px solid red;
@@ -99,6 +99,36 @@ margin: 10px;
   width: 300px;
   /*margin: ?px;*/
 }
+
+.card_single {
+width: 500px;
+border: 1px solid gray;
+box-shadow: 1px 1px 3px #888;
+border-top: 10px solid red;
+min-height: 250px;
+padding-: 10px;
+margin: 10px;
+
+}
+
+.card_single img {
+
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.card_single ul {
+
+  list-style: none;
+  padding-top: 10px;
+}
+
+.card_single ul li{
+
+  padding: 5px;
+}
+
 
 h1 {
    text-align: left;
@@ -125,14 +155,34 @@ p {
 
 .card a {
 
-   /*text-decoration: ?;*/
-   /*color: ?;*/
+   text-decoration: none;
+   color: black;
 
 }
 
 .card a:hover {
 
  /* color: ;*/
+}
+
+.card_single a {
+
+   text-decoration: none;
+   color: black;
+
+}
+
+.title {
+/* */
+
+position: absolute;
+ margin-top: 300px;
+ margin-left: 220px;
+color: yellow;
+font-size: 100px;
+font-weight: 700;
+text-align: center;
+
 }
 
 

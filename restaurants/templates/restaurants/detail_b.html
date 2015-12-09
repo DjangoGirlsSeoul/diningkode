@@ -57,33 +57,26 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-        <!-- TODO:  Change following to a good design!--> 
-        <section>
-                <a href="/bootstrap/{{restaurant.name}}">
-                    <img src="{{ restaurant.image }}" alt="" width="300">
-                </a>
-                <ul>
-                    <li>
-                        <a href="/{{restaurant.name}}">{{restaurant.name}}</a>
-                    </li>
-                    <li>rating: {{ restaurant.rating }}</li>
-                    <li>phone: {{ restaurant.phone_number }}</li>
-                    <li>address: {{ restaurant.address }}</li>
-                </ul>
-        </section>
-        <section>
-            <h2>Reviews</h2>
-            <ul>
-            {% for review in reviews %}
-            <li>
-                {{ review.review_text }}     
-                by: {{ review.author.username }}
-            </li>
-
-            {% endfor %}
+ <div class="row">
+              <div class="col-xs-12 col-md-6 col-md-offset-4">
+              <a href="/bootstrap/{{restaurant.name}}"> <img src="{{ restaurant.image }}" width="300"> </a> 
+              <a href="/bootstrap/{{restaurant.name}}"><h2>{{resto.name}}</h2></a>
+             <ul>
+              <li><strong>Rating:</strong> {{ restaurant.rating }}</li>
+               <li><strong>Phone:</strong> {{ restaurant.phone_number }}</li>
+                <li><strong>Address:</strong> {{ restaurant.address }}</li>
             </ul>
-        </section>
+                </div>
+
+  </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Copyright 2015 </p>
+      </div>
+    </footer>
+
+
+
     </div>
 
       <!-- Javascript -->

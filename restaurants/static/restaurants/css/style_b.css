@@ -31,3 +31,16 @@ background-color: #FFFFFF
 
 }
 
+.title {
+/* */
+
+position: absolute;
+ margin-top: 300px;
+ margin-left: 70px;
+color: yellow;
+font-size: 100px;
+font-weight: 700;
+text-align: center;
+
+}
+
