@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import Http404
 from .models import Restaurant, Review
+from django.db.models.functions import Length
 
 def index(request):
     return render(request, 'restaurants/index.html', {})
@@ -36,3 +37,8 @@ def ratingb(request, value):
     rating_value = float(value)
     restaurants = Restaurant.objects.filter(rating__gte=rating_value)
     return render(request, 'restaurants/rating_b.html', {"restaurants": restaurants, "rating_value": rating_value})
+
+def price(request, price):
+    restaurants = Restaurant.objects.filter(price=price)
+    return render(request, 'restaurants/price_b.html', {"restaurants": restaurants, "price": price})
+

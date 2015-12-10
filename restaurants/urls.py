@@ -10,5 +10,6 @@ urlpatterns = [
     url(r'^rating/(?P<value>[0-9])/$', views.rating, name='rating'),
     url(r'^bootstrap/rating/(?P<value>[0-9])/$', views.ratingb, name='ratingb'),
     url(r'^bootstrap/(?P<name>.+)/$', views.detailb, name='detailb'),
+    url(r'^price/(?P<price>.+)/$', views.price, name='price'),
     url(r'^(?P<name>.+)/$', views.detail, name='detail'),
 ]
